@@ -1,0 +1,27 @@
+<div class="container-fluid no-padding">
+  <nav class="navbar navbar-expand-lg navbar-light navCustom">
+    <a class="navbar-brand" [routerLink]="['/']">
+      <img src="assets/images/logo.png" alt="Music-logo" />
+      <span class="myApp">My Music App</span>
+    </a>
+    <button class="navbar-toggler" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" [ngbCollapse]="isNavbarCollapsed" id="navbarSupportedContent">
+      <!-- <ul class="navbar-nav navbar-left" *ngIf="!blockUser">
+        <li class="nav-item " routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+          <a class="nav-link" [routerLink]="['/']">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+          <a class="nav-link" *ngIf="activateRoute" [ngClass]="{'iAmActive': activeTab == 'Packages' }" [routerLink]="['/packages']">My Packages</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" *ngIf="activateRoute" [routerLink]="['/trips']">Trips</a>
+        </li>
+      </ul> -->
+    </div>
+  </nav>
+</div>

@@ -1,0 +1,41 @@
+/******************************FONT FAMILY VARIABLES************************************/
+
+$ff-regular: 'ubuntuRegular';
+$ff-bold: 'ubuntuBold';
+$ff-light: 'ubuntuLight';
+$ff-medium: 'ubuntuMedium';
+
+/******************************FONT COLOR VARIABLES************************************/
+
+$primary-color: #153a79;
+
+$secondary-color: #153a79;
+
+$anchor-color: rgba(0,0,0,.87);
+
+$body-color: rgba(0,0,0,.87);
+
+$body-bg-color: #F7F7F7;
+
+$btn-fsize-14: 14px;
+
+$btn-fsize-16: 16px;
+
+$btn-fsize-12: 12px;
+
+$btn-fsize-20: 20px;
+
+$btn-primary-color: #153a79;
+
+$btn-light-color: #F2F4F8;
+
+$btn-dark-color: #9196A1;
+
+$white: #FFFFFF;
+
+/******************************break Point mixins************************************/
+$breakpoint-ExtraLarge:1140px;
+$breakpoint-large:992px;
+$breakpoint-medium:768px;
+$breakpoint-small:576px;
+$breakpoint-ExtraSmall:320;

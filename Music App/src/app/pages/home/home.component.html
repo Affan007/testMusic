@@ -1,0 +1,13 @@
+<div class="job-report">
+    <div class="jobs" *ngFor="let data of previewDataFromServer" (click)=goto(data);>
+        <div class="report-img">
+            <img src="../../../../assets/images/musicIcon.png" alt="Music Icon">
+        </div>
+        <div class="report-text">
+            <div class="report-count">{{data.name}}</div>
+            <!-- <div class="report-label">{{data.genre}}</div> -->
+            <div class="report-label">{{data.artist}}</div>
+            <div class="report-label">Duration: {{data.length}} Min</div>
+        </div>
+    </div>
+</div>

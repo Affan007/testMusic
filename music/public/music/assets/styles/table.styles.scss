@@ -1,0 +1,102 @@
+/* Structure */
+
+@import './variables.scss';
+.table-container {
+    float: left;
+    width: 100%;
+}
+
+.table-container .title {
+    font-weight: 700;
+    float: left;
+    width: 50%;
+}
+
+table {
+    width: 100%;
+}
+
+.table-container .table-filters {
+    float: right;
+    width: 50%;
+}
+
+.table-container .table-filters mat-form-field {
+    float: right;
+}
+
+.table-container .table-filters mat-form-field .mat-form-field-infix {
+    font-size: $btn-fsize-14;
+}
+
+.mat-header-cell {
+    font-size: 14px; // padding: 5px;
+    padding: 2px;
+    color: #9F9E9F;
+}
+
+tr.mat-header-row {
+    height: 35px;
+}
+
+tr.mat-row {
+    height: 55px;
+}
+
+tr.mat-row td {
+    color: #191919;
+    padding: 5px;
+}
+
+tr.mat-row td img {
+    width: 45px;
+    height: 45px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 30px;
+    border: 2px solid #EAF1FB;
+}
+
+td.mat-cell:first-of-type,
+td.mat-footer-cell:first-of-type,
+th.mat-header-cell:first-of-type {
+    padding-left: 0;
+}
+
+td .btn {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.4rem;
+    float: left;
+    margin-right: 0.4rem;
+    font-size: 12px;
+    border-radius: 0.6rem;
+    border: none;
+    cursor: pointer;
+}
+
+td .btn.has-icon {
+    padding-right: 0.7rem;
+    padding-left: 0.7rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.2rem;
+    float: left;
+    margin-right: 0.4rem;
+    font-size: 12px;
+    border-radius: 0.6rem;
+    border: none;
+    cursor: pointer;
+}
+
+td .btn.btn-light {
+    background-color: $btn-light-color;
+}
+
+td .btn .icon {
+    font-size: 20px;
+}
+
+td .btn a {
+    color: rgba(0,0,0,.87);
+}

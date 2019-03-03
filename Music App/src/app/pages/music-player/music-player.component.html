@@ -1,0 +1,8 @@
+<div>
+  <app-music-meta [PreviewData]=previewDataFromServer>
+  </app-music-meta>
+  <audio #player controls id="player" class="audioPlayer">
+    <source *ngIf="previewDataFromServer.path" src="{{previewDataFromServer.path}}" type="audio/ogg">
+    <source *ngIf="previewDataFromServer.path" src="{{previewDataFromServer.path}}" type="audio/mpeg"> Your browser does not support the audio element.
+  </audio>
+</div>

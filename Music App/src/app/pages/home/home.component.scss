@@ -1,0 +1,36 @@
+@import '../../../assets/styles/base.scss';
+
+.job-report {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 89.2%;
+}
+.job-report .jobs {
+    background-color: #fff;
+    flex: 1 0 20%;
+    margin: 30px;
+    padding: 65px 25px 65px 25px;
+    border-radius: 10px;
+    align-items: center;
+}
+.job-report .jobs .report-img {
+    margin: auto;
+    text-align: center;
+}
+.job-report .jobs .report-text {
+    margin: auto;
+    text-align: center;
+}
+.job-report .jobs .report-img img {
+    width: 75px;
+}
+.report-count {
+    font-family: 'ubuntuMedium';
+    font-size: 24px;
+}
+.report-label {
+    color: #777777bd;
+    font-size: 16px;
+    margin-bottom: 3px;
+}
