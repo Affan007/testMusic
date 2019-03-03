@@ -6,7 +6,6 @@ This is a simple music app which list and Play songs developed using MEAN Stack
 
 . Frontend of this project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.4.
     and code is located inside `Music App`.</br>
-
 . Backend of this project is located inside `music` folder.<br/>
 . Songs are uploaded on a bucket at [Google Cloud Storage](https://cloud.google.com/storage/), and given public access.<br/>
 . Db is made on [Mlab](https://cloud.mongodb.com).<br/>
