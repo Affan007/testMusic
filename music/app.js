@@ -33,7 +33,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(version+'/list', music);
 // hitting   http://localhost:1234/list/test
-let port = process.env.port || 4201;
+let port = process.env.PORT || 4201;
 
 // Catch all other routes and return the index file
 app.get('/*', (req, res) => {
