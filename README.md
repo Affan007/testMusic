@@ -4,10 +4,10 @@ This is a simple music app which list and Play songs developed using MEAN Stack
 ### Staged URL
 [My music app](https://sample-music-app.herokuapp.com/)
 
-Frontend of this project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.4.
-and code is located inside 'Music App'.
+. Frontend of this project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.4.
+    and code is located inside `Music App`.</br>
 
-. Backend of this project is located inside 'music' folder.<br/>
+. Backend of this project is located inside `music` folder.<br/>
 . Songs are uploaded on a bucket at [Google Cloud Storage](https://cloud.google.com/storage/), and given public access.<br/>
 . Db is made on [Mlab](https://cloud.mongodb.com).<br/>
 . Code pushed on [Github](https://github.com/Affan007/testMusic).<br/>
