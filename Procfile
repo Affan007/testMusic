@@ -1,1 +1,1 @@
-web: sh -c 'cd ./music/ && exec node app.js'
+web: sh -c 'cd ./music/ && exec node app.js -p $PORT'
