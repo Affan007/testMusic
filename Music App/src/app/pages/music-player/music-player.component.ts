@@ -25,7 +25,7 @@ export class MusicPlayerComponent implements OnInit {
     this.getData();
   }
   ngAfterViewInit() {
-    // this.player.nativeElement.play();
+    this.player.nativeElement.play();
   }
 
   getData() {

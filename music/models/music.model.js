@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 let musicSchema = new Schema({
     name: { type: String, required: true, max: 100 },
-    length: { type: Number, required: false },
+    length: { type: String, required: false },
     artist: { type: String, required: false },
     genre: { type: String, required: false },
     path: { type: String, required: true },
