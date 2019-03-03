@@ -25,6 +25,11 @@
   ],
   "author": "Affan Akhter",
   "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.16"
+  },
   "bugs": {
     "url": "https://github.com/Affan007/testMusic/issues"
   },
