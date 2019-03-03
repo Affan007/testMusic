@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  baseUrl: 'http://localhost:4201/api/v1',
-  socket:'http://localhost:4201/api/v1',
+  baseUrl: 'https://sample-music-app.herokuapp.com/api/v1',
+  socket:'https://sample-music-app.herokuapp.com/api/v1',
 };
