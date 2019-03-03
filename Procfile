@@ -1,0 +1,1 @@
+web: sh -c 'cd ./music/ && exec node app.js'

@@ -1,0 +1,32 @@
+{
+  "name": "music",
+  "version": "1.0.0",
+  "description": "master branch for music apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines" : { 
+    "node" : ">=8.0.0 <11.0.0" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Affan007/testMusic.git"
+  },
+  "keywords": [
+    "music",
+    "red",
+    "buffer",
+    "testing",
+    "music",
+    "app",
+    "myplaylist",
+    "googleCloud"
+  ],
+  "author": "Affan Akhter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Affan007/testMusic/issues"
+  },
+  "homepage": "https://github.com/Affan007/testMusic#readme"
+}
