@@ -1,16 +1,9 @@
-import { Component, OnInit, NgZone, AfterViewInit } from '@angular/core';
-import { MouseEvent } from '@agm/core';
-import { Subscription, forkJoin } from 'rxjs';
+import { Component, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
 import { HttpService } from 'src/app/services/http-service';
-import { Router, ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 import { Globals } from '../../Globals';
 import { map } from 'rxjs/operators';
-import * as moment from 'moment';
-import { TooltipPosition } from '@angular/material';
-import { FormControl } from '@angular/forms';
-import { MatDialog } from '@angular/material';
-import { StorageService } from 'src/app/services/localStorage.service';
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -21,35 +14,30 @@ export class HomeComponent implements OnInit {
   private httpSub$: Subscription = null;
   // Type boolean variables
   isLoadingResults = true;
-  previewDataFromServer=[];
-  constructor(public storageService: StorageService, public zone: NgZone, private httpService: HttpService, private router: Router, private route: ActivatedRoute, public dialog: MatDialog) {
-    this.storageService.store('activeTab', 'home');
+  previewDataFromServer = [];
+  constructor(private httpService: HttpService, private router: Router) {
   }
   ngOnInit() {
-   this.getData();
+    this.getData();
   }
 
-  getData(){
-
+  getData() {
     this.httpSub$ = this.httpService.getRequest(this.globals.urls.getAlldata)
-    .pipe(
+      .pipe(
       map(res => res.data),
     )
-    .subscribe(
+      .subscribe(
       data => {
         this.isLoadingResults = false;
-        this.previewDataFromServer=data;
-      console.log(data);
-        // this.httpService.showSuccess('User signed In successfully', 'Sign In');
+        this.previewDataFromServer = data;
       },
       err => {
         this.isLoadingResults = false;
         // this.httpService.showError(err);
       }
-    );
+      );
   }
-  goto(data){
-    this.router.navigate(['/player'], { queryParams: { songId: data._id}, queryParamsHandling: 'merge' });
+  goto(data) {
+    this.router.navigate(['/player'], { queryParams: { songId: data._id }, queryParamsHandling: 'merge' });
   }
-  
 }

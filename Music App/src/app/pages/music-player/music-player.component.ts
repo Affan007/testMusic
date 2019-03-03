@@ -1,4 +1,4 @@
-import { Component, OnInit,ViewChild,ElementRef } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { HttpService } from 'src/app/services/http-service';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Globals } from '../../Globals';
@@ -12,42 +12,39 @@ import { map } from 'rxjs/operators';
 })
 export class MusicPlayerComponent implements OnInit {
 
-  constructor( private httpService: HttpService, private router: Router, private route: ActivatedRoute) { }
+  constructor(private httpService: HttpService, private router: Router, private route: ActivatedRoute) { }
   public globals = Globals;
   private httpSub$: Subscription = null;
   // Type boolean variables
   isLoadingResults = true;
-  previewDataFromServer:any={};
-  musicId:string;
+  previewDataFromServer: any = {};
+  musicId: string;
   @ViewChild('player') player: ElementRef;
   ngOnInit() {
     this.musicId = this.route.snapshot.queryParamMap.get("songId")
-    console.log(this.musicId);
     this.getData();
   }
   ngAfterViewInit() {
     // this.player.nativeElement.play();
   }
 
-  getData(){
-    let url=this.globals.urls.getSingleSongData;
-    url=url.replace(':id',this.musicId.toString());
+  getData() {
+    let url = this.globals.urls.getSingleSongData;
+    url = url.replace(':id', this.musicId.toString());
 
     this.httpSub$ = this.httpService.getRequest(url)
-    .pipe(
+      .pipe(
       map(res => res.data),
     )
-    .subscribe(
+      .subscribe(
       data => {
         this.isLoadingResults = false;
-        this.previewDataFromServer=data;
-      console.log(data);
-        // this.httpService.showSuccess('User signed In successfully', 'Sign In');
+        this.previewDataFromServer = data;
       },
       err => {
         this.isLoadingResults = false;
         // this.httpService.showError(err);
       }
-    );
+      );
   }
 }
