@@ -1,7 +1,7 @@
 # music App
 This is a simple music app which list and Play songs developed using MEAN Stack
 
-#Staged URL
+### Staged URL
 [My music app](https://sample-music-app.herokuapp.com/)
 
 Frontend of this project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.4.
